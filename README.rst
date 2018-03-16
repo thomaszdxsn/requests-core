@@ -5,8 +5,12 @@ Requests-Core
 
 --------------
 
-Goals: take urllib3 codebase, add async support (with multiple backends),
-default to trio execution of async functions for blocking calls.
+**Goals**:
+
+- take urllib3 codebase
+- add async support (with multiple backends)
+- default to trio execution of async functions for blocking calls.
+- potentially, add h2 support (would be amazing, if feasable)
 
 Usage
 -----
