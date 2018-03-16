@@ -22,7 +22,7 @@ Async usage::
     url = "http://httpbin.org/uuid"
 
     async def main():
-        r = await requests_core.request(method='GET', url=url)
+        r = await requests_core.request(method='GET', url=url, timeout=2)
         print(r.headers)
         print(await r.read())
 
