@@ -18,7 +18,7 @@ AUTHOR = 'Kenneth Reitz'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = '0.0.0'
 # What packages are required for this module to be executed?
-REQUIRED = ['h11']
+REQUIRED = ['h11', 'trio']
 # The rest you shouldn't have to touch too much :)
 # ------------------------------------------------
 # Except, perhaps the License and Trove Classifiers!
