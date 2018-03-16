@@ -14,9 +14,9 @@ name = "pypi"
 "h11" = "*"
 white = "*"
 black = "*"
-trio = "*"
 twisted = {extras = ["tls"]}
 twine = "*"
+trio = "*"
 
 
 [requires]
