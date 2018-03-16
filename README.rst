@@ -1,5 +1,9 @@
-Requests-Core: Experimental lower-level async HTTP client for Requests 3.0
-==========================================================================
+Requests-Core
+=============
+
+**Experimental lower-level async HTTP client for Requests 3.0**
+
+--------------
 
 Goals: take urllib3 codebase, add async support (with multiple backends),
 default to trio execution of async functions for blocking calls.
