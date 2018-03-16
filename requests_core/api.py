@@ -3,12 +3,10 @@ import trio
 from .http_manager import AsyncPoolManager
 from .http_manager._backends import TrioBackend
 
-DEFAULT_TIMEOUT = 8
-
 async def request(
     method,
     url,
-    timeout=DEFAULT_TIMEOUT,
+    timeout,
     body=None,
     headers=None,
     preload_content=False,
