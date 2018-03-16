@@ -12,11 +12,11 @@ from setuptools import find_packages, setup, Command
 # Package meta-data.
 NAME = 'requestscore'
 DESCRIPTION = 'A minimal HTTP Client, for Requests.'
-URL = 'https://github.com/requests/requstscore'
+URL = 'https://github.com/requests/requests-core'
 EMAIL = 'me@kennethreitz.org'
 AUTHOR = 'Kenneth Reitz'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.0.1'
+VERSION = '0.0.0'
 # What packages are required for this module to be executed?
 REQUIRED = ['h11']
 # The rest you shouldn't have to touch too much :)
