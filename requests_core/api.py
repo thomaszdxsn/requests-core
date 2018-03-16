@@ -3,14 +3,14 @@ import trio
 from .http_manager import AsyncPoolManager
 from .http_manager._backends import TrioBackend
 
+DEFAULT_TIMEOUT = 8
 
 async def request(
     method,
     url,
+    timeout=DEFAULT_TIMEOUT,
     body=None,
     headers=None,
-    # encode_multipart=True,
-    # multipart_boundary=None,
     preload_content=False,
     pool=None,
     **kwargs
@@ -23,8 +23,6 @@ async def request(
             method=method,
             url=url,
             headers=headers,
-            # encode_multipart=encode_multipart,
-            # multipart_boundary=multipart_boundary,
             preload_content=preload_content,
             **kwargs
         )
@@ -34,23 +32,20 @@ async def request(
 def blocking_request(
     method,
     url,
+    timeout,
     body=None,
     headers=None,
-    # encode_multipart=True,
-    # multipart_boundary=None,
     preload_content=False,
     pool=None,
-    # **kwargs
 ):
     """Returns a Response object."""
     return trio.run(
         request,
         method,
         url,
+        timeout,
         body,
         headers,
-        # encode_multipart,
-        # multipart_boundary,
         preload_content,
         pool
     )
