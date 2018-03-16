@@ -22,7 +22,7 @@ Async usage::
     url = "http://httpbin.org/uuid"
 
     async def main():
-        r = await requests_core.request('GET', url)
+        r = await requests_core.request(method='GET', url=url)
         print(r.headers)
         print(await r.read())
 
@@ -36,7 +36,7 @@ Async usage::
 
 Sync usage::
 
-    >>> r = requests_core.blocking_request('GET', URL)
+    >>> r = requests_core.blocking_request(method='GET', url=url)
     >>> print()
     <requests_core.http_manager._async.response.HTTPResponse object at 0x103f63c88>
 
