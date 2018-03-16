@@ -10,7 +10,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'requestscore'
+NAME = 'requests-core'
 DESCRIPTION = 'A minimal HTTP Client, for Requests.'
 URL = 'https://github.com/requests/requests-core'
 EMAIL = 'me@kennethreitz.org'

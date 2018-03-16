@@ -15,7 +15,8 @@ name = "pypi"
 white = "*"
 black = "*"
 trio = "*"
-Twisted = {extras = ["tls"]}
+twisted = {extras = ["tls"]}
+twine = "*"
 
 
 [requires]
