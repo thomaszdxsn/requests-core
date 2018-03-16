@@ -14,4 +14,4 @@ if __name__ == '__main__':
     import trio
 
     trio.run(main)
-print(requests_core.blocking_request('GET', URL))
+print(requests_core.blocking_request('GET', URL, timeout=2))
